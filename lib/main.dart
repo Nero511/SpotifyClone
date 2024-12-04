@@ -10,7 +10,10 @@ import 'package:spotify_clone/presentation/choose_mode/bloc/theme_cubit.dart';
 import 'package:spotify_clone/presentation/splash/pages/splash.dart';
 import 'package:spotify_clone/service_locator.dart';
 
+import 'dart:developer' as developer;
+
 void main() async {
+  developer.log('App started');
   WidgetsFlutterBinding.ensureInitialized();
   HydratedBloc.storage = await HydratedStorage.build(
     storageDirectory: kIsWeb
